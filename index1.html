@@ -13,10 +13,18 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <header class="jumbotron">
+    <header class="jumbotron" style="padding: 30px 0px 30px 0px;">
       <div class="container">
         <div class="row row-header">
           <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
@@ -24,16 +32,31 @@
               <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="#"
+                    ><span style="margin: 10px" class="fa fa-home fa-lg"></span>
+                    Home</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./aboutus.html">About</a>
+                  <a class="nav-link" href="./aboutus.html"
+                    ><span style="margin: 10px" class="fa fa-info fa-lg"></span>
+                    About</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Menu</a>
+                  <a class="nav-link" href="#"
+                    ><span style="margin: 10px" class="fa fa-list fa-lg"></span
+                    >Menu</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#">
+                    <span
+                      style="margin: 10px"
+                      class="fa fa-address-card fa-lg"
+                    ></span
+                    >Contact</a
+                  >
                 </li>
               </ul>
             </div>
@@ -44,21 +67,36 @@
             data-toggle="collapse"
             data-target="#Navbar"
           >
-            <span class="navbar-toggler-icon">=</span>
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">  
-                <a style="color: black;" class="nav-link" href="#" >Home</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  ><span style="margin: 10px" class="fa fa-home fa-lg"></span>
+                  Home</a
+                >
               </li>
               <li class="nav-item">
-                <a style="color: black;" class="nav-link" href="./aboutus.html">About</a>
+                <a class="nav-link" href="./aboutus.html"
+                  ><span style="margin: 10px" class="fa fa-info fa-lg"></span>
+                  About</a
+                >
               </li>
               <li class="nav-item">
-                <a style="color: black;" class="nav-link" href="#">Menu</a>
+                <a class="nav-link" href="#"
+                  ><span style="margin: 10px" class="fa fa-list fa-lg"></span
+                  >Menu</a
+                >
               </li>
               <li class="nav-item">
-                <a style="color: black;" class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#">
+                  <span
+                    style="margin: 10px"
+                    class="fa fa-address-card fa-lg"
+                  ></span
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
@@ -93,11 +131,41 @@
             </ul>
           </div>
 
-          <div class="col-7 col-sm-5">second</div>
+          <div class="col-7 col-sm-5">
+            <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
+            <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
+            <i class="fa fa-envelope fa-lg"></i>:
+            <a href="mailto:confusion@food.net">confusion@food.net</a>
+          </div>
 
-          <div class="col-12 col-sm-4 align-content-center">third</div>
+          <!-- <div class="col-12 col-sm-4 align-content-center">third</div> -->
 
-          <div class="col-auto text-center">fourth</div>
+          <div class="col-auto text-center">
+            <a class="btn btn-social-icon btn-google" href="http://google.com/+"
+              ><i class="fa fa-google-plus"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-facebook"
+              href="http://www.facebook.com/profile.php?id="
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-linkedin"
+              href="http://www.linkedin.com/in/"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-twitter"
+              href="http://twitter.com/"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"
+              ><i class="fa fa-youtube"></i
+            ></a>
+            <a class="btn btn-social-icon" href="mailto:"
+              ><i class="fa fa-envelope-o"></i
+            ></a>
+          </div>
         </div>
       </div>
     </footer>
