@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Home</title>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -14,10 +18,54 @@
   <body>
     <header class="jumbotron">
       <div class="container">
-        <div class="row row-header">logo</div>
+        <div class="row row-header">
+          <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./aboutus.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#Navbar"
+          >
+            <span class="navbar-toggler-icon">=</span>
+          </button>
+          <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">  
+                <a style="color: black;" class="nav-link" href="#" >Home</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: black;" class="nav-link" href="./aboutus.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: black;" class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: black;" class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="row">
           <div class="col-12 col-sm-6">home</div>
-          <div class="col-12 col-sm">categories</div>
+          <div class="col-12 col-sm">...</div>
         </div>
       </div>
     </header>
@@ -49,12 +97,12 @@
 
           <div class="col-12 col-sm-4 align-content-center">third</div>
 
-          <div class="col-auto text-center">
-              fourth
-            </div>
-          </div>
+          <div class="col-auto text-center">fourth</div>
         </div>
       </div>
     </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
