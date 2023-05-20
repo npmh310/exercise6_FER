@@ -37,3 +37,7 @@ body{
 .bg-primary {
      background-color: #512DA8 !important;
 }
+
+.nav-link{
+    color: black;
+}
