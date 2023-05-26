@@ -163,8 +163,34 @@
                     . . .
                   </div>
                 </div>
-                <div class="carousel-item">. . .</div>
-                <div class="carousel-item">. . .</div>
+                <div class="carousel-item">
+                  <div class="media">
+                    <img
+                      class="d-flex mr-3 img-thumbnail align-self-center"
+                      src="https://c4.wallpaperflare.com/wallpaper/264/666/478/3-316-16-9-aspect-ratio-s-sfw-wallpaper-preview.jpg"
+                      alt="Alberto Somayya"
+                      style="
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                      "
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item"><div class="media">
+                  <img
+                    class="d-flex mr-3 img-thumbnail align-self-center"
+                    src="https://i.pinimg.com/736x/3e/e1/28/3ee128987bbc6cc9524c7cea1033b21e.jpg"
+                    alt="Alberto Somayya"
+                    style="
+                      position: absolute;
+                      left: 50%;
+                      top: 50%;
+                      transform: translate(-50%, -50%);
+                    "
+                  />
+                </div></div>
               </div>
               <ol class="carousel-indicators">
                 <li
@@ -191,6 +217,14 @@
               >
                 <span class="carousel-control-next-icon"></span>
               </a>
+              <div class="btn-group" id="carouselButton">
+                <button class="btn btn-danger btn-sm" id="carousel-pause">
+                  <span class="fa fa-pause"></span>
+                </button>
+                <button class="btn btn-danger btn-sm" id="carousel-play">
+                  <span class="fa fa-play"></span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -230,25 +264,7 @@
           </div>
         </div>
 
-        <div class="row row-content align-content-center">
-          <div class="media">
-            <img
-              class="d-flex mr-3 img-thumbnail align-self-center"
-              src="img/alberto.png"
-              alt="Alberto Somayya"
-            />
-            <div class="media-body">
-              <h2 class="mt-0">Alberto Somayya</h2>
-              <h4>Executive Chef</h4>
-              <p class="d-none d-sm-block">
-                Award winning three-star Michelin chef with wide International
-                experience having worked closely with whos-who in the culinary
-                world, he specializes in creating mouthwatering Indo-Italian
-                fusion experiences.
-              </p>
-            </div>
-          </div>
-        </div>
+        <div class="row row-content align-content-center"></div>
         <div class="row">
           <div class="col-12 col-sm-4 col-md-3 order-sm-last"></div>
           <div class="col col-sm col-md order-sm-first"></div>
@@ -388,6 +404,15 @@
     <script>
       $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
+      });
+      $(document).ready(function () {
+        $("#mycarousel").carousel({ interval: 2000 });
+        $("#carousel-pause").click(function () {
+          $("#mycarousel").carousel("pause");
+        });
+        $("#carousel-play").click(function () {
+          $("#mycarousel").carousel("cycle");
+        });
       });
     </script>
   </body>
